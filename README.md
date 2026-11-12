@@ -35,9 +35,21 @@ Built with **Python** (data collection and modelling) and **Power BI** (data mod
 
 ### 1. Under-allocated mid-wide releases
 
-![Allocation page](screenshots/allocation.png)
+Wide Range releases:
+<img width="2385" height="1339" alt="image" src="https://github.com/user-attachments/assets/2ebe877e-7b46-403f-98c2-7d3560c90c2a" />
+<img width="898" height="323" alt="image" src="https://github.com/user-attachments/assets/0b5e626a-6d6e-473d-8877-1a890e7e1ece" />
+<img width="1319" height="575" alt="image" src="https://github.com/user-attachments/assets/aff31cc2-7a8a-4f2f-8f50-54bc0a77a7b4" />
+
+
+Mid Range releases:
+<img width="2364" height="1312" alt="image" src="https://github.com/user-attachments/assets/b1c1def8-5ae5-43bb-9b93-b420cb08e1b2" />
+<img width="907" height="328" alt="image" src="https://github.com/user-attachments/assets/f3661130-df14-44e0-a5d7-932aefbd799a" />
+<img width="1445" height="572" alt="image" src="https://github.com/user-attachments/assets/561b016e-dbbe-477e-bb88-f485e65f3131" />
+
 
 A film was flagged as under-allocated when it opened in 1,000–2,999 theatres with **opening demand well above its tier's typical level**, **added theatres in week 2**, and **held better than similar films in its second weekend**. A strong hold signals that demand spilled over from an opening that was too small.
+
+For Mid range releases (1k-2999), there were about 64 movies that were "under allocated" screens, and had an estimated missed gross of $25.97M. For Wide range releases (3k and up), there were 68 films that were under allocated in terms of screens, with an est Missed gross of $30.85M. Although, the wide release number is a little less actionable, because some films opened in 4k+ theatres, which is near the max capacity Stateside, so there was no room to send to any more theatres. 
 
 The flagged films were dominated by **horror** (_Get Out_, _Longlegs_, _Terrifier 3_), **faith-based** titles (_I Can Only Imagine_, _Sound of Freedom_, _Unplanned_) and **culturally specific** films (_BlacKkKlansman_), all audiences that pre-release tracking tends to underestimate.
 
@@ -47,7 +59,8 @@ _Method notes:_ platform releases (for example "Marty Surpeme", 6 theatres expan
 
 ### 2. Discount Tuesdays
 
-![Tuesday page](screenshots/tuesday.png)
+<img width="2259" height="1342" alt="image" src="https://github.com/user-attachments/assets/83fa6c45-2e30-4c87-9024-b3932adc410c" />
+
 
 Comparing each film's Tuesday gross with the average of its Monday and Wednesday (excluding holiday weeks and opening weeks), **Tuesday revenue is a median 32% higher** across 8,518 film-weeks. Because Tuesday tickets are discounted, the attendance lift is larger still.
 
@@ -57,7 +70,8 @@ During school weeks, **family films respond most (about +47%)**, while most genr
 
 ### 3. Counter-programming
 
-![Counter-programming page](screenshots/counter_programming.png)
+<img width="1394" height="517" alt="image" src="https://github.com/user-attachments/assets/a6aa28a7-2020-423c-9c8e-a1b5ed9828c4" />
+
 
 For every pair of wide releases opening the same weekend or one week apart (Only looking at openings at 20M+ or above, as anything under would have enough screens for multiple movies to be successful at the same time), I measured how much the first film's second weekend dropped compared with similar films that faced little competition.
 
