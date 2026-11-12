@@ -15,17 +15,17 @@ Built with **Python** (data collection and modelling) and **Power BI** (data mod
 |                                                                   |                                         |
 | ----------------------------------------------------------------- | --------------------------------------- |
 | Daily box office rows                                             | 127,922                                 |
-| Releases                                                          | 3,552 (2017–2019 and Nov 2021–Nov 2026)(excluded 2020 and beginning 2021 due to lockdowns, as it would sku data |
+| Releases                                                          | 3,552 (2017–2019 and Nov 2021–Nov 2026) |
 | Films enriched with distributor, MPA rating, genres and IMDb data | 1,823 (99% matched to IMDb)             |
-| Clash pairs analysed                                              | 1,351                                   |
+| Clash pairs analyzed                                              | 1,351                                   |
 | Film-weeks in the Tuesday analysis                                | 8,518                                   |
 
-- **Daily domestic (US and Canada) box office per film**, collected from Box Office Mojo's daily charts with a rate-limited, resumable scraper.
+- **Daily domestic (US and Canada) box office per film**, collected from Box Office Mojo's daily charts.
 - **Film details** (distributor, MPA rating, runtime, genres, IMDb ID) from each film's Box Office Mojo release page.
 - **IMDb ratings and genres** from IMDb's non-commercial datasets, joined on the exact IMDb ID rather than by title.
 - **Average ticket prices by year** from The Numbers, to convert gross into admissions.
 
-2020–2021 are excluded from comparisons because of pandemic closures. Re-releases and event screenings (concerts, Fathom events) are tagged and kept out of the analyses, since they behave differently from new releases.
+2020 and beginning/mid 2021 are excluded from comparisons because of pandemic closures. Re-releases and event screenings (concerts, Fathom events) are tagged and kept out of the analyses, since they behave differently from new releases.
 
 > The raw data is **not included** in this repository: Box Office Mojo's terms don't permit redistribution, and IMDb's datasets are licensed for non-commercial personal use only. The scripts below rebuild everything from the original sources.
 
@@ -43,7 +43,7 @@ The flagged films were dominated by **horror** (_Get Out_, _Longlegs_, _Terrifie
 
 **Booking implication:** for these kinds of titles, lean toward more showtimes than the distributor's projection suggests.
 
-_Method notes:_ platform releases (for example, 6 theatres expanding to 2,000+) are excluded, because a packed opening in a few hand-picked theatres says nothing about how thousands more would perform. At 3,000+ theatres, films are close to the national ceiling, so under-allocation there shows up in screens per theatre, which public data doesn't capture.
+_Method notes:_ platform releases (for example "Marty Surpeme", 6 theatres expanding to 2,000+) are excluded, because a packed opening in a few hand-picked theatres says nothing about how thousands more would perform. At 3,000+ theatres, films are close to the national ceiling, so under-allocation there shows up in screens per theatre, which public data doesn't capture.
 
 ### 2. Discount Tuesdays
 
@@ -51,24 +51,24 @@ _Method notes:_ platform releases (for example, 6 theatres expanding to 2,000+) 
 
 Comparing each film's Tuesday gross with the average of its Monday and Wednesday (excluding holiday weeks and opening weeks), **Tuesday revenue is a median 32% higher** across 8,518 film-weeks. Because Tuesday tickets are discounted, the attendance lift is larger still.
 
-During school weeks, **family films respond most (about +47%)**, while most genres sit between +35% and +41% and **horror gains least (about +33%)**. Families save on several tickets at once, while horror audiences turn up on opening weekend whatever the price.
+During school weeks, **family films respond most (about +47%)**, while most genres sit between +35% and +41% and **horror gains least (about +33%)**. Families save on several tickets at once, while horror audiences are more price inelastic, and turn up on opening weekend whatever the price.
 
-**Booking implication:** give family titles extra Tuesday showtimes during the school year.
+**Booking implication:** give family titles extra Tuesday showtimes during the school year, and it doesn't necessarily mean reducing Horror showtimes on Tuesdays. But if a case ever should arise where theatres need to make room for a family film on Tuesdays, Horror can be the first place to consider reductions.
 
 ### 3. Counter-programming
 
 ![Counter-programming page](screenshots/counter_programming.png)
 
-For every pair of wide releases opening the same weekend or one week apart (both opening at $20M+), I measured how much the first film's second weekend dropped compared with similar films that faced little competition.
+For every pair of wide releases opening the same weekend or one week apart (Only looking at openings at 20M+ or above, as anything under would have enough screens for multiple movies to be successful at the same time), I measured how much the first film's second weekend dropped compared with similar films that faced little competition.
 
 - **Clashes hurt less than expected.** A big opener on a film's second weekend adds only about **2–3 points** to its drop.
 - **Genre overlap barely matters** (the trend line is nearly flat), but **audience segment does, in specific combinations:**
-  - R-rated films lose most to other R-rated films (**+4.6 pts**, 153 pairs)
-  - PG-13 tentpoles lose most to family films (**+5.1 pts**, 97 pairs)
+  - R-rated films lose most to other R-rated films (**+4.6 pts**, 153 pairs analyzed)
+  - PG-13 tentpoles lose most to family films (**+5.1 pts**, 97 pairs analyzed)
   - Family films are the most resilient (**−0.8 pts overall**; they held slightly better than their baseline)
 - **Same-weekend clashes rarely grow the market:** the median clash weekend is about **1.0x** a typical weekend in its season. _Barbie_ and _Oppenheimer_ (**2.32x**) were a cultural exception, not the rule.
 
-**Booking implication:** when a family film opens on a PG-13 tentpole's second weekend, shift screens toward it earlier than usual. Genre labels alone are a weak guide to real audience overlap, which is the open question for December 18, 2026, when _Dune: Part Three_ and _Avengers: Doomsday_ open against each other.
+**Booking implication:** when a family film opens on a PG-13 tentpole's second weekend, shift screens toward it earlier than usual. Genre labels alone are a weak guide to real audience overlap, which is the open question for December 18, 2026, when _Dune: Part Three_ and _Avengers: Doomsday_ open against each other. Current public pre-sales records show an INSANE demand for Avengers, and a very good pre-sales value for Dune: Part 3. Doomsday is expected to beat Endgame's OW record, and Dune is also expected to open at over $100M OW based on current forecasting. 
 
 ---
 
@@ -96,7 +96,7 @@ The heavy calculations, such as comparing each film with every other film, previ
 
 ## Limitations
 
-- **Domestic means the US and Canada combined.** Canada-only and regional figures aren't public.
+- **Domestic means the US and Canada combined.** Canada-only and regional figures aren't public. I would like to analyze how certain regions are stronger in certain genre's, but unfortunately that data is not available to the public.
 - **No showtime or screen-count data.** Allocation is measured in theatres, so screens per theatre (where much real allocation happens) isn't visible.
 - **Correlation, not causation.** Clash effects, Tuesday lifts and allocation flags describe patterns; other factors (reviews, marketing, holidays) also play a role.
 - **Estimates rest on assumptions.** Missed-gross estimates and occupancy use adjustable assumptions, shown as sliders in the dashboard.
