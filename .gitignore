@@ -23,3 +23,4 @@ bom_model.py
 raw_daily/
 raw_releases/
 daily_box_office.csv
+title.basics.tsv.gz
