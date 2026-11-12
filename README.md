@@ -49,13 +49,13 @@ Mid Range releases:
 
 A film was flagged as under-allocated when it opened in 1,000–2,999 theatres with **opening demand well above its tier's typical level**, **added theatres in week 2**, and **held better than similar films in its second weekend**. A strong hold signals that demand spilled over from an opening that was too small.
 
-For Mid range releases (1k-2999), there were about 64 movies that were "under allocated" screens, and had an estimated missed gross of $25.97M. For Wide range releases (3k and up), there were 68 films that were under allocated in terms of screens, with an est Missed gross of $30.85M. Although, the wide release number is a little less actionable, because some films opened in 4k+ theatres, which is near the max capacity Stateside, so there was no room to send to any more theatres. 
+For Mid range releases (1k-2999), there were about 64 movies that were "under allocated" screens, and had an estimated missed gross of $25.97M. 
 
 The flagged films were dominated by **horror** (_Get Out_, _Longlegs_, _Terrifier 3_), **faith-based** titles (_I Can Only Imagine_, _Sound of Freedom_, _Unplanned_) and **culturally specific** films (_BlacKkKlansman_), all audiences that pre-release tracking tends to underestimate.
 
 **Booking implication:** for these kinds of titles, lean toward more showtimes than the distributor's projection suggests.
 
-_Method notes:_ platform releases (for example "Marty Surpeme", 6 theatres expanding to 2,000+) are excluded, because a packed opening in a few hand-picked theatres says nothing about how thousands more would perform. At 3,000+ theatres, films are close to the national ceiling, so under-allocation there shows up in screens per theatre, which public data doesn't capture.
+_Method notes:_ platform releases (for example "Marty Supreme", 6 theatres expanding to 2,000+) are excluded, because a packed opening in a few hand-picked theatres says nothing about how thousands more would perform. At 3,000+ theatres, films are close to the national ceiling, so under-allocation there shows up in screens per theatre, which public data doesn't capture.
 
 ### 2. Discount Tuesdays
 
@@ -73,7 +73,7 @@ During school weeks, **family films respond most (about +47%)**, while most genr
 <img width="1394" height="517" alt="image" src="https://github.com/user-attachments/assets/a6aa28a7-2020-423c-9c8e-a1b5ed9828c4" />
 
 
-For every pair of wide releases opening the same weekend or one week apart (Only looking at openings at 20M+ or above, as anything under would have enough screens for multiple movies to be successful at the same time), I measured how much the first film's second weekend dropped compared with similar films that faced little competition.
+For every pair of wide releases opening the same weekend or one week apart (limited to clashes where both films opened at $20M+, to focus on genuinely big releases), I measured how much the first film's second weekend dropped compared with similar films that faced little competition.
 
 - **Clashes hurt less than expected.** A big opener on a film's second weekend adds only about **2–3 points** to its drop.
 - **Genre overlap barely matters** (the trend line is nearly flat), but **audience segment does, in specific combinations:**
@@ -82,7 +82,7 @@ For every pair of wide releases opening the same weekend or one week apart (Only
   - Family films are the most resilient (**−0.8 pts overall**; they held slightly better than their baseline)
 - **Same-weekend clashes rarely grow the market:** the median clash weekend is about **1.0x** a typical weekend in its season. _Barbie_ and _Oppenheimer_ (**2.32x**) were a cultural exception, not the rule.
 
-**Booking implication:** when a family film opens on a PG-13 tentpole's second weekend, shift screens toward it earlier than usual. Genre labels alone are a weak guide to real audience overlap, which is the open question for December 18, 2026, when _Dune: Part Three_ and _Avengers: Doomsday_ open against each other. Current public pre-sales records show an INSANE demand for Avengers, and a very good pre-sales value for Dune: Part 3. Doomsday is expected to beat Endgame's OW record, and Dune is also expected to open at over $100M OW based on current forecasting. 
+**Booking implication:** when a family film opens on a PG-13 tentpole's second weekend, shift screens toward it earlier than usual. Genre labels alone are a weak guide to real audience overlap, which is the open question for December 18, 2026, when _Dune: Part Three_ and _Avengers: Doomsday_ open against each other. Current public pre-sales records show a great demand for Avengers, and a very good pre-sales value for Dune: Part 3. Doomsday is expected to beat Endgame's OW record, and Dune is also expected to open at over $100M OW based on current forecasting. 
 
 ---
 
