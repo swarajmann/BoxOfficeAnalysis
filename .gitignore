@@ -1,0 +1,25 @@
+# Data: not redistributed (Box Office Mojo terms, IMDb non-commercial licence)
+raw_daily/
+raw_releases/
+*.csv
+*.tsv
+*.gz
+
+# Power BI files store a copy of the data
+*.pbix
+*.pbit
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Script logs
+failed_dates.txt
+failed_releases.txt
+
+# Not part of the published project
+bom_model.py
+raw_daily/
+raw_releases/
+daily_box_office.csv
