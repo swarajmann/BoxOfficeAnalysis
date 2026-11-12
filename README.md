@@ -15,7 +15,7 @@ Built with **Python** (data collection and modelling) and **Power BI** (data mod
 |                                                                   |                                         |
 | ----------------------------------------------------------------- | --------------------------------------- |
 | Daily box office rows                                             | 127,922                                 |
-| Releases                                                          | 3,552 (2017–2019 and Nov 2021–Nov 2026) |
+| Releases                                                          | 3,552 (2017–2019 and Nov 2021–Nov 2026)(excluded 2020 and beginning 2021 due to lockdowns, as it would sku data |
 | Films enriched with distributor, MPA rating, genres and IMDb data | 1,823 (99% matched to IMDb)             |
 | Clash pairs analysed                                              | 1,351                                   |
 | Film-weeks in the Tuesday analysis                                | 8,518                                   |
